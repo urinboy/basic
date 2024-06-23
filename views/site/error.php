@@ -18,10 +18,10 @@ $this->title = $name;
     </div>
 
     <p>
-        The above error occurred while the Web server was processing your request.
+        <?= Yii::t("Yuqoridagi xato veb-server sizning so'rovingizni ko'rib chiqayotganda sodir bo'ldi.") ?>
     </p>
     <p>
-        Please contact us if you think this is a server error. Thank you.
+        <?= Yii::t("Agar bu server xatoligi deb o'ylasangiz, biz bilan bog'laning. Rahmat.") ?>
     </p>
 
 </div>

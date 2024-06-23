@@ -2,12 +2,12 @@
 
 /** @var yii\web\View $this */
 
-$this->title = 'My Yii Application';
+$this->title = Yii::t('app', 'Bosh sahifa');
 ?>
 <div class="site-index">
 
     <div class="jumbotron text-center bg-transparent mt-5 mb-5">
-        <h1 class="display-4">Masodfaviy Ta'lim</h1>
+        <h1 class="display-4"><?= Yii::t('app', "Masodfaviy Ta'lim") ?></h1>
 
         <p class="lead">ITORDA.UZ platformamizga hush kelibsiz!</p>
 

@@ -9,6 +9,7 @@ use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
+use app\components\LanguageDropdown;
 
 AppAsset::register($this);
 
@@ -48,10 +49,11 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     echo '<div class="navbar-collapse">';
     echo '<div class="navbar-collapse align-items-center justify-content-center">';
     $menuItems = [
-        ['label' => 'Bosh sahifa', 'url' => ['/site/index']],
-        ['label' => 'Biz haqimizda', 'url' => ['/site/about']],
-        ['label' => 'Yangiliklar', 'url' => ['/admin/news']],
-        ['label' => 'Bog\'lanish', 'url' => ['/site/contact']],
+        ['label' => Yii::t('app', 'Bosh sahifa'), 'url' => ['/site/index']],
+        ['label' => Yii::t('app', 'Biz haqimizda'), 'url' => ['/site/about']],
+        ['label' => Yii::t('app', 'Yangiliklar'), 'url' => ['/admin/news/index']],
+        ['label' => Yii::t('app', 'Bog\'lanish'), 'url' => ['/site/contact']],
+        ['label' => LanguageDropdown::label(Yii::$app->language), 'items' => LanguageDropdown::widget()]
     ];
 
     echo Nav::widget([
@@ -65,17 +67,17 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     if (Yii::$app->user->isGuest) {
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav'],
-            'items' => [['label' => 'Kirish', 'url' => ['/site/login']]],
+            'items' => [['label' => Yii::t('app', 'Kirish'), 'url' => ['/site/login']]],
         ]);
     } else {
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav'],
             'items' => [
-                ['label' => 'Profil', 'url' => ['/user/profile']],
+                ['label' => Yii::t('app', 'Profil'), 'url' => ['/user/profile']],
                 '<li class="nav-item">'
                     . Html::beginForm(['/site/logout'])
                     . Html::submitButton(
-                        'Chiqish (' . Yii::$app->user->identity->username . ')',
+                        Yii::t('app', 'Chiqish (') . Yii::$app->user->identity->username . ')',
                         ['class' => 'nav-link btn btn-link logout']
                     )
                     . Html::endForm()
