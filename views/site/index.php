@@ -9,7 +9,7 @@ $this->title = Yii::t('app', 'Bosh sahifa');
     <div class="jumbotron text-center bg-transparent mt-5 mb-5">
         <h1 class="display-4"><?= Yii::t('app', "Masodfaviy Ta'lim") ?></h1>
 
-        <p class="lead">ITORDA.UZ platformamizga hush kelibsiz!</p>
+        <p class="lead"><?= Yii::t('app', '{app_name} platformamizga hush kelibsiz!', ['app_name' => Yii::$app->name,]) ?></p>
 
         <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
     </div>

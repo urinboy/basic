@@ -5,6 +5,18 @@
 use yii\helpers\Html;
 
 $this->title = Yii::t('app', 'Profil');
+$this->params['breadcrumbs'][] = $this->title;
+
+$css = <<<CSS
+    .hello-text{
+        font-size: 16px;
+        font-weight: bold;
+        color: red;
+    }
+CSS;
+
+$this->registerCss($css);
+$this->registerCssFile('@web/css/profile.css');
 
 ?>
 <div class="site-index">
@@ -12,7 +24,7 @@ $this->title = Yii::t('app', 'Profil');
     <div class="jumbotron text-center bg-transparent mt-5 mb-5">
         <h1 class="display-4"><?= Html::encode($this->title) ?></h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+        <p class="lead hello-text">You have successfully created your Yii-powered application.</p>
 
         <p><a class="btn btn-lg btn-success" href="/"><?= Yii::t('app', 'Bosh sahifa') ?></a></p>
     </div>
