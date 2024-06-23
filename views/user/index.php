@@ -15,6 +15,6 @@ $this->title = 'Foydalanuvchilar';
     </div>
 
     <div class="body-content">
-
+        <a href="/user/products" class="btn btn-sm btn-primary">Foydalanuvchi Products</a>
     </div>
 </div>

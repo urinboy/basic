@@ -34,26 +34,58 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
-        'options' => ['class' => 'navbar-expand-md navbar-dark bg-dark fixed-top']
+        'options' => [
+            'class' => 'navbar-expand-md navbar-dark bg-dark fixed-top',
+        ],
     ]);
+
+    // Left aligned brand
+    echo '<div class="navbar-brand d-flex">';
+//    echo Html::a(Yii::$app->name, Yii::$app->homeUrl, ['class' => 'navbar-brand']);
+    echo '</div>';
+
+    // Center aligned menu items for larger screens
+    echo '<div class="navbar-collapse">';
+    echo '<div class="navbar-collapse align-items-center justify-content-center">';
+    $menuItems = [
+        ['label' => 'Bosh sahifa', 'url' => ['/site/index']],
+        ['label' => 'Biz haqimizda', 'url' => ['/site/about']],
+        ['label' => 'Yangiliklar', 'url' => ['/admin/news']],
+        ['label' => 'Bog\'lanish', 'url' => ['/site/contact']],
+    ];
+
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest
-                ? ['label' => 'Login', 'url' => ['/site/login']]
-                : '<li class="nav-item">'
+        'items' => $menuItems,
+    ]);
+    echo '</div>';
+
+    // Right aligned auth links
+    echo '<ul class="navbar-nav ml-auto">';
+    if (Yii::$app->user->isGuest) {
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-nav'],
+            'items' => [['label' => 'Kirish', 'url' => ['/site/login']]],
+        ]);
+    } else {
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-nav'],
+            'items' => [
+                ['label' => 'Profil', 'url' => ['/user/profile']],
+                '<li class="nav-item">'
                     . Html::beginForm(['/site/logout'])
                     . Html::submitButton(
-                        'Logout (' . Yii::$app->user->identity->username . ')',
+                        'Chiqish (' . Yii::$app->user->identity->username . ')',
                         ['class' => 'nav-link btn btn-link logout']
                     )
                     . Html::endForm()
-                    . '</li>'
-        ]
-    ]);
+                    . '</li>',
+            ],
+        ]);
+    }
+    echo '</ul>';
+    echo '</div>';
+
     NavBar::end();
     ?>
 </header>
@@ -71,8 +103,11 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <footer id="footer" class="mt-auto py-3 bg-light">
     <div class="container">
         <div class="row text-muted">
-            <div class="col-md-6 text-center text-md-start">&copy; My Company <?= date('Y') ?></div>
-            <div class="col-md-6 text-center text-md-end"><?= Yii::powered() ?></div>
+            <div class="col-md-6 text-center text-md-start">&copy; ITORDA.UZ - <?= date('Y') ?></div>
+            <div class="col-md-6 text-center text-md-end">
+                <?php //= Yii::powered() ?>
+                O'rinboy Tursunboyev
+            </div>
         </div>
     </div>
 </footer>

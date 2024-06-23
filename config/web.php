@@ -7,6 +7,13 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+
+    // Saytning asosiy tili
+    'language' => 'Uz-uz',
+
+    // Birinchi sayt ochiganda chiqadigan route
+    'defaultRoute' => 'site/index',
+
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
