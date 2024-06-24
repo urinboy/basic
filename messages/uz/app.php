@@ -1,9 +1,15 @@
 <?php
     return [
         // Sayt moni va description
-        "Masodfaviy Ta'lim" => "Masodfaviy Ta'lim",
+        "Masofaviy Ta'lim" => "Masodfaviy Ta'lim",
+        "Qoraqalpoq davlat universiteti" =>"Qoraqalpoq davlat universiteti",
         "/logos/karsu_moodle-UZ.png" => "/logos/karsu_moodle-UZ.png",
         "Platformamizga hush kelibsiz!" => "Platformamizga hush kelibsiz!",
+        "Agar savollaringiz bo'lsa, biz bilan bog'lanish uchun quyidagi shaklni to'ldiring. Rahmat." => "Agar savollaringiz bo'lsa, biz bilan bog'lanish uchun quyidagi shaklni to'ldiring. Rahmat.",
+        "Biz bilan bog'langaningiz uchun tashakkur. Sizga imkon qadar tezroq javob beramiz." => "Biz bilan bog'langaningiz uchun tashakkur. Sizga imkon qadar tezroq javob beramiz.",
+
+        // Kontakt formasida
+        "Tasdiq kodi" => "Tasdiq kodi",
 
         // Navbar tarjimalari
         "Bosh sahifa" => "Bosh sahifa",

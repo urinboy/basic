@@ -51,7 +51,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     $menuItems = [
         ['label' => Yii::t('app', 'Bosh sahifa'), 'url' => ['/site/index']],
         ['label' => Yii::t('app', 'Biz haqimizda'), 'url' => ['/site/about']],
-        ['label' => Yii::t('app', 'Yangiliklar'), 'url' => ['/admin/news/index']],
+//        ['label' => Yii::t('app', 'Yangiliklar'), 'url' => ['/admin/news/index']],
         ['label' => Yii::t('app', 'Bog\'lanish'), 'url' => ['/site/contact']],
         ['label' => LanguageDropdown::label(Yii::$app->language), 'items' => LanguageDropdown::widget()]
     ];
@@ -108,10 +108,10 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <footer id="footer" class="mt-auto py-3 bg-light">
     <div class="container">
         <div class="row text-muted">
-            <div class="col-md-6 text-center text-md-start">&copy; ITORDA.UZ - <?= date('Y') ?></div>
+            <div class="col-md-6 text-center text-md-start">&copy; <?= Yii::t('app', Yii::$app->name) ?> - <?= date('Y') ?></div>
             <div class="col-md-6 text-center text-md-end">
-                <?php //= Yii::powered() ?>
-                O'rinboy Tursunboyev
+                <?= Yii::t('app', "Qoraqalpoq davlat universiteti") ?>
+
             </div>
         </div>
     </div>

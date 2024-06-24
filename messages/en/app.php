@@ -2,9 +2,15 @@
     return [
 
         // Site mine and desscription
-        "Masodfaviy Ta'lim" => "Distance Learning",
+        "Masofaviy Ta'lim" => "Distance Learning",
+        "Qoraqalpoq davlat universiteti" =>"Karakalpak State University",
         "/logos/karsu_moodle-UZ.png" => "/logos/karsu_moodle-EN.png",
         "Platformamizga hush kelibsiz!" => "Welcome to our platform!",
+            "Agar savollaringiz bo'lsa, biz bilan bog'lanish uchun quyidagi shaklni to'ldiring. Rahmat." => "If you have any questions, please fill out the form below to contact us. Thank you.",
+        "Biz bilan bog'langaningiz uchun tashakkur. Sizga imkon qadar tezroq javob beramiz." => "Thank you for contacting us. We will reply you as soon as possible.",
+
+        // Kontakt formasida
+        "Tasdiq kodi" => "Verification Code",
 
         // Navbar translators
         "Bosh sahifa" => "Home",

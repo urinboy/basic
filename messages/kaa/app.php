@@ -1,8 +1,14 @@
 <?php
     return [
-        "Masodfaviy Ta'lim" => "Araliqtan Oqitiw",
+        "Masofaviy Ta'lim" => "Araliqtan Oqitiw",
+        "Qoraqalpoq davlat universiteti" =>"Qaraqalpaq ma'mleketlik universiteti",
         "/logos/karsu_moodle-UZ.png" => "/logos/karsu_moodle-KAA.png",
          "Platformamizga hush kelibsiz!" => "Platformamizg'a xosh keldin'iz!",
+        "Agar savollaringiz bo'lsa, biz bilan bog'lanish uchun quyidagi shaklni to'ldiring. Rahmat." => "Eger sorawlarıńız bolsa, biz menen baylanısıw ushın tómendegi formanı toldırıń. Raxmet.",
+        "Biz bilan bog'langaningiz uchun tashakkur. Sizga imkon qadar tezroq javob beramiz." => "Biz menen baylanısqanıńız ushın minnetdarshilıq bildiremiz. Sizge múmkinshiligi barınsha tezirek juwap beremiz.",
+
+        // Kontakt formasida
+        "Tasdiq kodi" => "Tastıyıq kodı",
 
         // Navbar tarjimalari
         "Bosh sahifa" => "Bas bet",

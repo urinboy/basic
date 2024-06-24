@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row justify-content-center">
         <div class="col-lg-12 m-3">
             <h1 class="d-flex justify-content-center"> <?= Html::encode($this->title) ?></h1>
-            <p class="d-flex justify-content-center">Please fill out the following fields to login:</p>
+            <p class="d-flex justify-content-center"></p>
         </div>
     </div>
 
