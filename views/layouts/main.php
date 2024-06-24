@@ -67,7 +67,10 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     if (Yii::$app->user->isGuest) {
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav'],
-            'items' => [['label' => Yii::t('app', 'Kirish'), 'url' => ['/site/login']]],
+            'items' => [
+                    ['label' => Yii::t('app', 'Kirish'), 'url' => ['/site/login']],
+                    ['label' => Yii::t('app', 'Ro\'yxatdan o\'tish'), 'url' => ['/user/register']]
+            ],
         ]);
     } else {
         echo Nav::widget([

@@ -9,7 +9,10 @@
         "Biz haqimizda" => "Biz haqimizda",
         "Yangiliklar" => "Yangiliklar",
         "Bog'lanish" => "Bog'lanish",
+
+        // Kirish chiqish ro'yxatga olish
         "Kirish" => "Kirish",
+        "Ro'yxatdan o'tish" => "Ro'yxatdan o'tish",
         "Profil" => "Profil",
         "Chiqish (" => "Chiqish (",
 

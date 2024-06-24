@@ -70,7 +70,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
             ],
-            'languages' => ['uz', 'ru', 'en', 'kar'],
+            'languages' => ['uz', 'ru', 'en', 'kaa'],
         ],
 
     ],

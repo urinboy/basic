@@ -10,7 +10,10 @@
         "Biz haqimizda" => "About",
         "Yangiliklar" => "News",
         "Bog'lanish" => "Contact",
+
+        // kirish chiqish ro'yxatga olish
         "Kirish" => "Login",
+        "Ro'yxatdan o'tish" => "Register",
         "Profil" => "Profile",
         "Chiqish (" => "Log out (",
 

@@ -8,9 +8,12 @@
         "Biz haqimizda" => "Biz haqimizda",
         "Yangiliklar" => "Jan'iliqlar",
         "Bog'lanish" => "Baylanis",
+
+        // kirish chiqish ro'yxatga olish
         "Kirish" => "Kiriw",
+        "Ro'yxatdan o'tish" => "Ag'za boliw",
         "Profil" => "Profil",
-        "Chiqish (" => "Shig\'iw (",
+        "Chiqish (" => "Shig'iw (",
 
         // Xatoliklar
         "Yuqoridagi xato veb-server sizning so'rovingizni ko'rib chiqayotganda sodir bo'ldi." => "Joqarıdaǵı qáte veb-server sizdiń sorawıńızdı kórip shıǵıp atırǵanda júz berdi.",

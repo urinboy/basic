@@ -10,7 +10,10 @@
         "Biz haqimizda" => "О нас",
         "Yangiliklar" => "Новости",
         "Bog'lanish" => "Связь",
+
+        // kirish chiqish ro'yxatga olish
         "Kirish" => "Войти",
+        "Ro'yxatdan o'tish" => "Регистрация",
         "Profil" => "Профиль",
         "Chiqish (" => "Выход (",
 

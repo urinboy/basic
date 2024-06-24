@@ -53,7 +53,7 @@ class LanguageDropdown extends Dropdown {
         if (self::$_labels === null) {
             self::$_labels = [
                 'uz' => 'O\'zbek',
-                'kar' => 'Qaraqalpaq',
+                'kaa' => 'Qaraqalpaq',
                 'ru' => 'Русский',
                 'en' => 'English',
             ];
