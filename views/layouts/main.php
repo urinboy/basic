@@ -9,6 +9,7 @@ use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
+use app\components\LanguageDropdown;
 
 AppAsset::register($this);
 
@@ -23,7 +24,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
-    <title><?= Html::encode($this->title) ?></title>
+    <title><?= Html::encode($this->title) ?> - <?= Yii::t('app', Yii::$app->name ) ?></title>
     <?php $this->head() ?>
 </head>
 <body class="d-flex flex-column h-100">
@@ -32,7 +33,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <header id="header">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => Yii::t('app', Yii::$app->name),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-expand-md navbar-dark bg-dark fixed-top',
@@ -48,16 +49,33 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     echo '<div class="navbar-collapse">';
     echo '<div class="navbar-collapse align-items-center justify-content-center">';
     $menuItems = [
-        ['label' => 'Bosh sahifa', 'url' => ['/site/index']],
-        ['label' => 'Biz haqimizda', 'url' => ['/site/about']],
-        ['label' => 'Yangiliklar', 'url' => ['/admin/news']],
-        ['label' => 'Bog\'lanish', 'url' => ['/site/contact']],
+        ['label' => Yii::t('app', 'Bosh sahifa'), 'url' => ['/site/index']],
+        ['label' => Yii::t('app', 'Biz haqimizda'), 'url' => ['/site/about']],
+//        ['label' => Yii::t('app', 'Yangiliklar'), 'url' => ['/admin/news/index']],
+        ['label' => Yii::t('app', 'Bog\'lanish'), 'url' => ['/site/contact']],
+        ['label' => LanguageDropdown::label(Yii::$app->language), 'items' => LanguageDropdown::widget()]
     ];
 
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
         'items' => $menuItems,
     ]);
+
+
+//    echo '<div class="bd-hs-1 dropdown">
+//                <button class="dropdown-toggle" id="bd-notification" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+//                    <img src="https://my.uzbmb.uz/icons/uz.svg" class="bd-h-lang-icon" alt="">
+//                    <span>Uz</span>
+//                </button>
+//                <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="bd-notification">
+//                                            <a href="/language/qq"><img src="https://my.uzbmb.uz/icons/qq.svg" alt="" width="25px">
+//                            Qq</a>
+//                                            <a href="/language/ru"><img src="https://my.uzbmb.uz/icons/ru.svg" alt="" width="25px">
+//                            Ру</a>
+//                                    </div>
+//            </div>';
+
+
     echo '</div>';
 
     // Right aligned auth links
@@ -65,17 +83,20 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     if (Yii::$app->user->isGuest) {
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav'],
-            'items' => [['label' => 'Kirish', 'url' => ['/site/login']]],
+            'items' => [
+                    ['label' => Yii::t('app', 'Kirish'), 'url' => ['/site/login']],
+//                    ['label' => Yii::t('app', 'Ro\'yxatdan o\'tish'), 'url' => ['/user/register']]
+            ],
         ]);
     } else {
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav'],
             'items' => [
-                ['label' => 'Profil', 'url' => ['/user/profile']],
+                ['label' => Yii::t('app', 'Profil'), 'url' => ['/user/profile']],
                 '<li class="nav-item">'
                     . Html::beginForm(['/site/logout'])
                     . Html::submitButton(
-                        'Chiqish (' . Yii::$app->user->identity->username . ')',
+                        Yii::t('app', 'Chiqish (') . Yii::$app->user->identity->username . ')',
                         ['class' => 'nav-link btn btn-link logout']
                     )
                     . Html::endForm()
@@ -103,10 +124,10 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <footer id="footer" class="mt-auto py-3 bg-light">
     <div class="container">
         <div class="row text-muted">
-            <div class="col-md-6 text-center text-md-start">&copy; ITORDA.UZ - <?= date('Y') ?></div>
+            <div class="col-md-6 text-center text-md-start">&copy; <?= Yii::t('app', Yii::$app->name) ?> - <?= date('Y') ?></div>
             <div class="col-md-6 text-center text-md-end">
-                <?php //= Yii::powered() ?>
-                O'rinboy Tursunboyev
+                <?= Yii::t('app', "Qoraqalpoq davlat universiteti") ?>
+
             </div>
         </div>
     </div>

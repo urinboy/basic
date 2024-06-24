@@ -2,6 +2,8 @@
 
 namespace app\controllers;
 
+use app\models\RegistrationForm;
+use Yii;
 use yii\web\Controller;
 
 class UserController extends Controller
@@ -72,6 +74,17 @@ class UserController extends Controller
     {
         $productsList = ['Iphone', 'Samsung', 'Imac', 'Iwatch'];
         return $this->render('products', compact('userName','productsList'));
+    }
+
+    public function actionRegister()
+    {
+        $model = new RegistrationForm();
+
+        if(Yii::$app->request->isPost && $model->load(Yii::$app->request->post())){
+            debug($model); die;
+        }
+
+        return $this->render('register', compact('model'));
     }
 
 }

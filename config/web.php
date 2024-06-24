@@ -7,9 +7,10 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'name' => "Masofaviy Ta'lim",
 
     // Saytning asosiy tili
-    'language' => 'Uz-uz',
+    'language' => 'uz',
 
     // Birinchi sayt ochiganda chiqadigan route
     'defaultRoute' => 'site/index',
@@ -50,11 +51,27 @@ $config = [
         ],
         'db' => $db,
 
+        'i18n' => [
+            'translations' => [
+                'app*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    //'basePath' => '@app/messages',
+                    'sourceLanguage' => 'uz',
+                    'fileMap' => [
+                        'app' => 'app.php',
+                       // 'app/error' => 'error.php',
+                    ],
+                ],
+            ],
+        ],
+
         'urlManager' => [
+            'class' => 'codemix\localeurls\UrlManager',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
+            'languages' => ['uz', 'ru', 'en', 'kaa'],
         ],
 
     ],

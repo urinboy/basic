@@ -11,7 +11,7 @@ $this->title = 'News Cretae';
 
         <p class="lead">You have successfully created your Yii-powered application.</p>
 
-        <p><a class="btn btn-lg btn-success" href="/admin/news">Orqaga qaytishs</a></p>
+        <p><a class="btn btn-lg btn-success" href="/admin/news">Orqaga qaytish</a></p>
     </div>
 
     <div class="body-content">
