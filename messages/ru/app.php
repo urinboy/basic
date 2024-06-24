@@ -3,7 +3,8 @@
 
         // Сайт Мони и описание
         "Masodfaviy Ta'lim" => "Дистанционное Обучение",
-        "{app_name} platformamizga hush kelibsiz!" => "Добро пожаловать на нашу платформу {app_name}!",
+        "/logos/karsu_moodle-UZ.png" => "/logos/karsu_moodle-RU.png",
+        "Platformamizga hush kelibsiz!" => "Добро пожаловать на нашу платформу!",
 
         // Переводы навигационной панели
         "Bosh sahifa" => "Главная страница",

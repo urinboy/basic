@@ -1,7 +1,8 @@
 <?php
     return [
         "Masodfaviy Ta'lim" => "Araliqtan Oqitiw",
-         "{app_name} platformamizga hush kelibsiz!" => "{app_name} platformamizg'a xosh keldin'iz!",
+        "/logos/karsu_moodle-UZ.png" => "/logos/karsu_moodle-KAA.png",
+         "Platformamizga hush kelibsiz!" => "Platformamizg'a xosh keldin'iz!",
 
         // Navbar tarjimalari
         "Bosh sahifa" => "Bas bet",

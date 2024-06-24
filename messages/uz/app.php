@@ -2,7 +2,8 @@
     return [
         // Sayt moni va description
         "Masodfaviy Ta'lim" => "Masodfaviy Ta'lim",
-        "{app_name} platformamizga hush kelibsiz!" => "{app_name} platformamizga hush kelibsiz!",
+        "/logos/karsu_moodle-UZ.png" => "/logos/karsu_moodle-UZ.png",
+        "Platformamizga hush kelibsiz!" => "Platformamizga hush kelibsiz!",
 
         // Navbar tarjimalari
         "Bosh sahifa" => "Bosh sahifa",

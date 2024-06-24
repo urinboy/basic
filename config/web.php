@@ -7,6 +7,7 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'name' => "Masodfaviy Ta'lim",
 
     // Saytning asosiy tili
     'language' => 'uz',

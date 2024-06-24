@@ -3,7 +3,8 @@
 
         // Site mine and desscription
         "Masodfaviy Ta'lim" => "Distance Learning",
-        "{app_name} platformamizga hush kelibsiz!" => "Welcome to our platform {app_name}!",
+        "/logos/karsu_moodle-UZ.png" => "/logos/karsu_moodle-EN.png",
+        "Platformamizga hush kelibsiz!" => "Welcome to our platform!",
 
         // Navbar translators
         "Bosh sahifa" => "Home",
