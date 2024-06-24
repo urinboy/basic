@@ -8,7 +8,17 @@
         "Biz bilan bog'langaningiz uchun tashakkur. Sizga imkon qadar tezroq javob beramiz." => "Biz menen baylanısqanıńız ushın minnetdarshilıq bildiremiz. Sizge múmkinshiligi barınsha tezirek juwap beremiz.",
 
         // Kontakt formasida
+        "To'liq ism" => "Tolıq at",
+        "Elektron pochta" => "Elektron poshta",
+        "Mavzu" => "Tema ",
+        "To'liq matn" => "Tolıq tekst",
         "Tasdiq kodi" => "Tastıyıq kodı",
+        "Yuborish" => "Jiberiw",
+
+        // Kirish formasida
+        "Login" => "Login",
+        "Parol" => "Parol",
+        "Eslab qolinsinmi" => "Eslep qalinsinba",
 
         // Navbar tarjimalari
         "Bosh sahifa" => "Bas bet",

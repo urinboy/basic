@@ -9,7 +9,17 @@
         "Biz bilan bog'langaningiz uchun tashakkur. Sizga imkon qadar tezroq javob beramiz." => "Biz bilan bog'langaningiz uchun tashakkur. Sizga imkon qadar tezroq javob beramiz.",
 
         // Kontakt formasida
+        "To'liq ism" => "To'liq ism",
+        "Elektron pochta" => "Elektron pochta",
+        "Mavzu" => "Mavzu",
+        "To'liq matn" => "To'liq matn",
         "Tasdiq kodi" => "Tasdiq kodi",
+        "Yuborish" => "Yuborish",
+
+        // Kirish formasida
+        "Login" => "Login",
+        "Parol" => "Parol",
+        "Eslab qolinsinmi" => "Eslab qolinsinmi",
 
         // Navbar tarjimalari
         "Bosh sahifa" => "Bosh sahifa",

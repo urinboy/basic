@@ -62,7 +62,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     ]) ?>
 
                                     <div class="form-group">
-                                        <?= Html::submitButton('Submit', ['class' => 'btn btn-primary  w-100', 'name' => 'contact-button']) ?>
+                                        <?= Html::submitButton(Yii::t('app', 'Yuborish'), ['class' => 'btn btn-primary  w-100', 'name' => 'contact-button',]) ?>
                                     </div>
 
                                 <?php ActiveForm::end(); ?>

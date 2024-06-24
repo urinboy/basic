@@ -10,7 +10,17 @@
         "Biz bilan bog'langaningiz uchun tashakkur. Sizga imkon qadar tezroq javob beramiz." => "Благодарим Вас за обращение к нам. Мы ответим вам как можно скорее.",
 
         // Kontakt formasida
+        "To'liq ism" => "Полное имя",
+        "Elektron pochta" => "Электронная почта",
+        "Mavzu" => "Тема",
+        "To'liq matn" => "Полный текст",
         "Tasdiq kodi" => "Проверочный код",
+        "Yuborish" => "Отправить",
+
+        // Kirish formasida
+        "Login" => "Имя пользователя",
+        "Parol" => "Пароль",
+        "Eslab qolinsinmi" => "Помните?",
 
         // Переводы навигационной панели
         "Bosh sahifa" => "Главная страница",

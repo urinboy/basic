@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'id' => 'login-form',
                         'fieldConfig' => [
                             'template' => "{label}\n{input}\n{error}",
-                            'labelOptions' => ['class' => 'col-lg-2 col-form-label mr-lg-3'],
+                            'labelOptions' => ['class' => 'col-lg-6 col-form-label mr-lg-3'],
                             'inputOptions' => ['class' => 'col-lg-3 form-control'],
                             'errorOptions' => ['class' => 'col-lg-7 invalid-feedback'],
                         ],
@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                     <div class="form-group">
                         <div>
-                            <?= Html::submitButton('Login', ['class' => 'btn btn-primary w-100', 'name' => 'login-button']) ?>
+                            <?= Html::submitButton(Yii::t('app', 'Kirish'), ['class' => 'btn btn-primary w-100', 'name' => 'login-button']) ?>
                         </div>
                     </div>
 

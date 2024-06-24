@@ -24,7 +24,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
-    <title><?= Html::encode($this->title) ?></title>
+    <title><?= Html::encode($this->title) ?> - <?= Yii::t('app', Yii::$app->name ) ?></title>
     <?php $this->head() ?>
 </head>
 <body class="d-flex flex-column h-100">
@@ -60,6 +60,22 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'options' => ['class' => 'navbar-nav'],
         'items' => $menuItems,
     ]);
+
+
+//    echo '<div class="bd-hs-1 dropdown">
+//                <button class="dropdown-toggle" id="bd-notification" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+//                    <img src="https://my.uzbmb.uz/icons/uz.svg" class="bd-h-lang-icon" alt="">
+//                    <span>Uz</span>
+//                </button>
+//                <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="bd-notification">
+//                                            <a href="/language/qq"><img src="https://my.uzbmb.uz/icons/qq.svg" alt="" width="25px">
+//                            Qq</a>
+//                                            <a href="/language/ru"><img src="https://my.uzbmb.uz/icons/ru.svg" alt="" width="25px">
+//                            Ру</a>
+//                                    </div>
+//            </div>';
+
+
     echo '</div>';
 
     // Right aligned auth links
@@ -69,7 +85,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             'options' => ['class' => 'navbar-nav'],
             'items' => [
                     ['label' => Yii::t('app', 'Kirish'), 'url' => ['/site/login']],
-                    ['label' => Yii::t('app', 'Ro\'yxatdan o\'tish'), 'url' => ['/user/register']]
+//                    ['label' => Yii::t('app', 'Ro\'yxatdan o\'tish'), 'url' => ['/user/register']]
             ],
         ]);
     } else {

@@ -10,7 +10,17 @@
         "Biz bilan bog'langaningiz uchun tashakkur. Sizga imkon qadar tezroq javob beramiz." => "Thank you for contacting us. We will reply you as soon as possible.",
 
         // Kontakt formasida
+        "To'liq ism" => "Full Name",
+        "Elektron pochta" => "Email",
+        "Mavzu" => "Subject",
+        "To'liq matn" => "Body",
         "Tasdiq kodi" => "Verification Code",
+        "Yuborish" => "Submit",
+
+        // Kirish formasida
+        "Login" => "Login",
+        "Parol" => "Password",
+        "Eslab qolinsinmi" => "Remember me",
 
         // Navbar translators
         "Bosh sahifa" => "Home",
