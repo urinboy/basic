@@ -24,12 +24,12 @@ $this->registerCssFile('@web/css/profile.css');
     <div class="jumbotron text-center bg-transparent mt-5 mb-5">
         <h1 class="display-4"><?= Html::encode($this->title) ?></h1>
 
-        <p class="lead hello-text">You have successfully created your Yii-powered application.</p>
+        <p class="lead hello-text"><?= Yii::$app->user->identity->username ?></p>
 
         <p><a class="btn btn-lg btn-success" href="/"><?= Yii::t('app', 'Bosh sahifa') ?></a></p>
     </div>
 
-    <div class="body-content">
-        <a href="/user/products" class="btn btn-sm btn-primary">Foydalanuvchi Products</a>
-    </div>
+<!--    <div class="body-content">-->
+<!--        <a href="/user/products" class="btn btn-sm btn-primary">Foydalanuvchi Products</a>-->
+<!--    </div>-->
 </div>
