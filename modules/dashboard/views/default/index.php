@@ -1,10 +1,3 @@
-<?php
-
-/** @var yii\web\View $this */
-
-$this->title = 'Dashboard';
-?>
-
 <div class="dashboard-default-index">
     <h1><?= $this->context->action->uniqueId ?></h1>
     <p>

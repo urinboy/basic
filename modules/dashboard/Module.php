@@ -1,6 +1,6 @@
 <?php
 
-namespace app\mudules\dashboard;
+namespace app\modules\dashboard;
 
 /**
  * dashboard module definition class
@@ -10,7 +10,7 @@ class Module extends \yii\base\Module
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'app\mudules\dashboard\controllers';
+    public $controllerNamespace = 'app\modules\dashboard\controllers';
 
     /**
      * {@inheritdoc}

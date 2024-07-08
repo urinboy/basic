@@ -23,7 +23,7 @@ $config = [
     // Barcha modullarni shu yerda ko'rsatish kerak
     'modules' => [
         'dashboard' => [
-            'class' => 'app\mudules\dashboard\Module',
+            'class' => 'app\modules\dashboard\Module',
         ],
     ],
 
@@ -63,12 +63,27 @@ $config = [
             'translations' => [
                 'app*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
-                    //'basePath' => '@app/messages',
+                    'basePath' => '@app/messages',
                     'sourceLanguage' => 'uz',
                     'fileMap' => [
                         'app' => 'app.php',
-                       // 'app/error' => 'error.php',
+                        'app/error' => 'error.php',
                     ],
+                ],
+                'yii' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages',
+                    'sourceLanguage' => 'uz',
+                ],
+                'content' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages',
+                    'sourceLanguage' => 'uz',
+                ],
+                'models' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages',
+                    'sourceLanguage' => 'uz',
                 ],
             ],
         ],

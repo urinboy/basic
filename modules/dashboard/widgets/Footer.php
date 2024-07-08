@@ -1,6 +1,6 @@
 <?php
 
-namespace app\mudules\dashboard\widgets;
+namespace app\modules\dashboard\widgets;
 
 use yii\bootstrap5\Widget;
 

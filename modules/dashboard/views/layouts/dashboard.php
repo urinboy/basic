@@ -4,14 +4,12 @@
 /** @var string $content */
 
 use app\assets\DashboardAsset;
-use app\mudules\dashboard\widgets\ControlSidebar;
-use app\mudules\dashboard\widgets\Navbar;
-use app\mudules\dashboard\widgets\MainSidebar;
-use app\mudules\dashboard\widgets\Footer;
+use app\modules\dashboard\widgets\Footer;
+use app\modules\dashboard\widgets\MainSidebar;
+use app\modules\dashboard\widgets\Navbar;
 use app\widgets\Alert;
-use yii\bootstrap5\Breadcrumbs;
+//use yii\bootstrap4\Breadcrumbs;
 use yii\bootstrap5\Html;
-use app\components\LanguageDropdown;
 
 DashboardAsset::register($this);
 
@@ -47,9 +45,22 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             <h1 class="m-0"><?= Html::encode($this->title) ?></h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
-              <?php if (!empty($this->params['breadcrumbs'])): ?>
-                <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
-              <?php endif ?>
+<!--              --><?php //if (!empty($this->params['breadcrumbs'])): ?>
+<!--                --><?php //= \yii\bootstrap5\Breadcrumbs::widget([
+//                        'options' =>
+//                            ['class' => 'float-sm-right'],
+//                            ['links' => $this->params['breadcrumbs']]
+//                  ]) ?>
+<!--              --><?php //endif ?>
+              <?= \yii\bootstrap5\Breadcrumbs::widget([
+                      'homeLink' => [
+                            'label' => Yii::t('app', "Bosh sahifa"),
+                            'url' => ['/dashboard'],
+                        ],
+                      'options' => ['class' => 'breadcrumb float-sm-right'],
+                  'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+              ]) ?>
+
 <!--            <ol class="breadcrumb float-sm-right">-->
 <!--              <li class="breadcrumb-item"><a href="#">Home</a></li>-->
 <!--              <li class="breadcrumb-item active">Dashboard v3</li>-->
