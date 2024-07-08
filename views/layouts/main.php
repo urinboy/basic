@@ -61,21 +61,6 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'items' => $menuItems,
     ]);
 
-
-//    echo '<div class="bd-hs-1 dropdown">
-//                <button class="dropdown-toggle" id="bd-notification" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-//                    <img src="https://my.uzbmb.uz/icons/uz.svg" class="bd-h-lang-icon" alt="">
-//                    <span>Uz</span>
-//                </button>
-//                <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="bd-notification">
-//                                            <a href="/language/qq"><img src="https://my.uzbmb.uz/icons/qq.svg" alt="" width="25px">
-//                            Qq</a>
-//                                            <a href="/language/ru"><img src="https://my.uzbmb.uz/icons/ru.svg" alt="" width="25px">
-//                            Ру</a>
-//                                    </div>
-//            </div>';
-
-
     echo '</div>';
 
     // Right aligned auth links
@@ -127,7 +112,6 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             <div class="col-md-6 text-center text-md-start">&copy; <?= Yii::t('app', Yii::$app->name) ?> - <?= date('Y') ?></div>
             <div class="col-md-6 text-center text-md-end">
                 <?= Yii::t('app', "Qoraqalpoq davlat universiteti") ?>
-
             </div>
         </div>
     </div>
