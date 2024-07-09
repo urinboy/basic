@@ -17,6 +17,7 @@ class Module extends \yii\base\Module
      */
     public function init()
     {
+//        \Yii::$app->errorHandler->errorAction = 'dashboard/default/error';
         parent::init();
 
         // custom initialization code goes here

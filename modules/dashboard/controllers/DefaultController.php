@@ -2,6 +2,7 @@
 
 namespace app\modules\dashboard\controllers;
 
+use yii\filters\AccessControl;
 use yii\web\Controller;
 
 /**
@@ -15,6 +16,26 @@ class DefaultController extends Controller
      */
 
     public $layout = 'dashboard';
+
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::class,
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'actions' => ['login', 'signup'],
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+        ];
+    }
 
     public function actionIndex()
     {

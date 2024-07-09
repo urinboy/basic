@@ -77,7 +77,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav'],
             'items' => [
-                ['label' => Yii::t('app', 'Profil'), 'url' => ['/user/profile']],
+                ['label' => Yii::t('app', 'Dashboard'), 'url' => ['/dashboard']],
                 '<li class="nav-item">'
                     . Html::beginForm(['/site/logout'])
                     . Html::submitButton(

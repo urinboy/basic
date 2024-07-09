@@ -5,7 +5,6 @@
 use yii\helpers\Html;
 
 $this->title = Yii::t('app', 'Dashboard');
-//$this->params['breadcrumbs'][] = $this->title;
 ?>
 
 
@@ -16,15 +15,4 @@ $this->title = Yii::t('app', 'Dashboard');
             Dashboardga hush kelibsiz!
         </div>
     </div>
-
-<!--    <h1>--><?php //= $this->context->action->uniqueId ?><!--</h1>-->
-<!--    <p>-->
-<!--        This is the view content for action "--><?php //= $this->context->action->id ?><!--".-->
-<!--        The action belongs to the controller "--><?php //= get_class($this->context) ?><!--"-->
-<!--        in the "--><?php //= $this->context->module->id ?><!--" module.-->
-<!--    </p>-->
-<!--    <p>-->
-<!--        You may customize this page by editing the following file:<br>-->
-<!--        <code>--><?php //= __FILE__ ?><!--</code>-->
-<!--    </p>-->
 </div>

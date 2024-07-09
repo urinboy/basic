@@ -1,6 +1,7 @@
 <?php
 
 use app\components\LanguageDropdown;
+use yii\helpers\Html;
 use yii\helpers\Url;
 
 $langs = [
@@ -68,9 +69,16 @@ $langs = [
           </a>
 
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-              <i class="fas fa-door-open"></i> <?= Yii::t('app', "Chiqish") ?>
-          </a>
+                <?= Html::beginForm(['/site/logout'], 'post', ['class' => 'dropdown-item']) ?>
+                <?= Html::submitButton(
+                    '<i class="fas fa-door-open"></i> ' . Yii::t('app', 'Chiqish'),
+                    ['class' => 'btn btn-link logout', 'style' => 'padding: 0; border: none; background: none;']
+                ) ?>
+                <?= Html::endForm() ?>
+
+<!--          <a href="#" class="dropdown-item">-->
+<!--              <i class="fas fa-door-open"></i> --><?php //= Yii::t('app', "Chiqish") ?>
+<!--          </a>-->
         </div>
       </li>
     </ul>

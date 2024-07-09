@@ -6,13 +6,13 @@ use app\controllers\Yii;
 use app\models\Menu;
 use app\models\MenuSearch;
 use yii\filters\VerbFilter;
-use yii\web\Controller;
+use app\modules\dashboard\controllers\DefaultController;
 use yii\web\NotFoundHttpException;
 
 /**
  * MenuController implements the CRUD actions for Menu model.
  */
-class MenuController extends Controller
+class MenuController extends DefaultController
 {
     /**
      * @inheritDoc

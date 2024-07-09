@@ -38,6 +38,7 @@ $config = [
         'user' => [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
+            'loginUrl' => ['/dashboard/user/login'],
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
